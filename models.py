@@ -48,7 +48,8 @@ class Inventory:
         self.items = []
 
     def add_item(self, item):
-        self.items.append(item)
+        # INTENTIONAL BUG: This overwrites the list instead of appending!
+        self.items = [item]
 
 
 class Player:
