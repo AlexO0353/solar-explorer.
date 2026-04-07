@@ -34,6 +34,9 @@ class TestGameModels(unittest.TestCase):
         test_player.travel_to(earth)
         self.assertEqual(test_player.current_location.name, "Earth")
 
+     def test_forced_failure(self):
+        """This test is intentionally designed to fail for TDD evidence."""
+        self.assertEqual(1, 2)  # 1 does not equal 2, so this MUST fail!
 
 if __name__ == '__main__':
     unittest.main()
