@@ -29,7 +29,7 @@ class ExploreCommand(Command):
 
     def execute(self, player, solar_system):
         if player.current_location:
-            # Calls the method from our OOP model
+            # Calls the method from the OOP model
             return player.current_location.explore_data()
         return "[red]Error: You are not currently orbiting a known planet.[/red]"
 
