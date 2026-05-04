@@ -75,7 +75,7 @@ def main_loop(player, solar_system):
         raw_input = console.input("[bold blue]What are your orders? > [/bold blue]")
         user_input = raw_input.strip()
 
-        # 2. Intercept the quit command directly in main.py (Implementing Elizabeth's feedback)
+        # 2. Intercept the quit command directly in main.py (Implementing peer feedback)
         if user_input.lower() == "quit":
             playing = False
             console.print("[bold red]Initiating shutdown sequence. Goodbye![/bold red]")
